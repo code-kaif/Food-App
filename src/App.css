@@ -1,0 +1,161 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+}
+.main {
+  height: 100vh;
+}
+.navbar {
+  height: 25vh;
+  background-color: rgb(43, 42, 42);
+}
+.nav-1 {
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+.heading {
+  font-size: 1.2rem;
+}
+.search input {
+  width: 16vw;
+  height: 4vh;
+  font-weight: 600;
+  border: 1px solid red;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(43, 42, 42);
+  padding-left: 10px;
+  font-size: 1rem;
+}
+::placeholder {
+  color: white;
+}
+.nav-1 span {
+  color: red;
+}
+.nav-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comps a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 1rem;
+  font-weight: 600;
+  background-color: red;
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+}
+.container {
+  height: 75vh;
+  background-image: url("public/bg.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+.box {
+  height: 25vh;
+  width: 25vw;
+  border-radius: 10px;
+  background: rgb(43, 42, 42, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.food-img {
+  height: 90%;
+  width: 40%;
+  padding-left: 0.5rem;
+  padding-top: 0.8rem;
+}
+.food-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.food-dis {
+  height: 100%;
+  width: 55%;
+}
+.food-dis p {
+  padding-right: 0.5rem;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+}
+.btn button {
+  color: white;
+  background-color: red;
+  border: none;
+  padding: 0.2rem 0.7rem;
+  cursor: pointer;
+  border-radius: 3px;
+  position: absolute;
+  right: 1rem;
+  bottom: 0.3rem;
+}
+@media (min-width: 300px) and (max-width: 500px) {
+  .nav-1 {
+    height: 15vh;
+    flex-direction: column;
+  }
+  .search input {
+    width: 80vw;
+    margin-bottom: 1rem;
+  }
+  .nav-2 {
+    height: 8vh;
+  }
+}
+@media (min-width: 300px) and (max-width: 370px) {
+  .comps a {
+    margin: 0 0.5rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 500px) {
+  .container {
+    background-image: none;
+  }
+  .box {
+    margin: 1rem 0;
+    width: 90vw;
+    height: 25vh;
+  }
+  .food-dis {
+    padding-top: 1rem;
+    font-size: 1.3rem;
+  }
+  .food-dis .btn {
+    padding-top: 2rem;
+  }
+  .food-dis button {
+    padding: 0.4rem 1rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .box {
+    height: 20vh;
+  }
+  .food-dis {
+    font-size: 1.1rem;
+  }
+  .food-dis .btn {
+    padding-top: 1.2rem;
+  }
+}
